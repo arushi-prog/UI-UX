@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignments Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007acc;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .card a:hover {
+      background-color: #005f99;
+      transform: scale(1.05);
+    }
+
+    @media(max-width: 500px){
+      h1 {
+        font-size: 2.2rem;
+      }
+      .card {
+        padding: 20px 15px;
+      }
+      .card a {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1> UI-UX Assignments </h1>
+
+  <div class="container">
+    <div class="card">
+      <h2>Assignment 1</h2>
+      <a href="assignment1/lab1.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>Assignment 2</h2>
+      <a href="assignment2/index.html" target="_blank">Open</a>
+    </div>
+
+    <div class="card">
+      <h2>Assignment 3 & 4</h2>
+      <a href="assignment3/index.html" target="_blank">Open</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
